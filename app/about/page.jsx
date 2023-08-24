@@ -12,6 +12,7 @@ const Abaout = () => {
               width={500}
               height={500}
               alt="about"
+              priority={true}
             />
           </div>
           <div className="p-6">

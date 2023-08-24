@@ -29,6 +29,7 @@ async function Post({ params }) {
             className="w-full md:w-[800px] h-full md:h-500px] object-cover rounded-lg"
             width={500}
             height={500}
+            priority={true}
             alt="post"
           />
         </div>

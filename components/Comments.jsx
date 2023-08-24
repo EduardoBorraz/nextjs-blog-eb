@@ -13,6 +13,7 @@ const Comments = ({ comments }) => {
                 alt="perfil"
                 width={100}
                 height={100}
+                priority={true}
               />
               <div>
                 <span className="text-gray-900 font-medium">
