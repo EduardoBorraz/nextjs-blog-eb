@@ -12,6 +12,7 @@ const PostCard = ({ post }) => {
         width={500}
         height={200}
         alt="post"
+        priority={true}
       />
 
       <div className="mt-4 flex flex-col gap-2">

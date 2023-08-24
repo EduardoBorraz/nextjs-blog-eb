@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   const navigation = [
-    { id: 1, name: "Posts", href: "/posts", current: false },
-    { id: 2, name: "Home", href: "/", current: false },
+    { id: 1, name: "Home", href: "/", current: false },
+    { id: 2, name: "Posts", href: "/posts", current: false },
     { id: 3, name: "About", href: "/about", current: false },
   ];
 
