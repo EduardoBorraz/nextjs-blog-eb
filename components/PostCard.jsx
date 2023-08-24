@@ -1,17 +1,19 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 const PostCard = ({ post }) => {
   const { title, body, name, postId, website } = post;
   return (
     <div className="bg-white p-4 rounded-lg shadow hover:shadow-xl transition-all w-full">
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1692680879374-57b4cd57942d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
-          className="w-full md:w-[500px] h-full md:h-[300px] object-cover rounded-lg"
-          alt=""
-        />
-      </div>
+      <Image
+        src="https://images.unsplash.com/photo-1692680879374-57b4cd57942d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
+        className="w-full md:w-[500px] h-full md:h-[300px] object-cover rounded-lg"
+        width={500}
+        height={200}
+        alt="post"
+      />
+
       <div className="mt-4 flex flex-col gap-2">
         <Link
           href={`/posts/${postId}`}

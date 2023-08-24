@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   const navigation = [
-    { name: "Home", href: "/", current: false },
-    { name: "Posts", href: "/posts", current: false },
-    { name: "About", href: "/about", current: false },
+    { id: 1, name: "Posts", href: "/posts", current: false },
+    { id: 2, name: "Home", href: "/", current: false },
+    { id: 3, name: "About", href: "/about", current: false },
   ];
 
   return (
@@ -15,6 +15,7 @@ export default function Navbar() {
       <nav className="md:col-span-8 flex items-center gap-4 justify-center">
         {navigation.map((item) => (
           <Link
+            key={item.id}
             href={item.href}
             className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-100 transitions-color"
           >

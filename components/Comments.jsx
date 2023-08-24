@@ -2,7 +2,7 @@ const Comments = ({ comments }) => {
   return (
     <div>
       {comments.map((comment) => (
-        <div className="bg-gray-100 p-6 rounded-lg mb-6 ">
+        <div className="bg-gray-100 p-6 rounded-lg mb-6" key={comment.id}>
           <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-dashed border-gray-500/20 pb-6 mb-6">
             <div className="flex items-start gap-x-4">
               <img
